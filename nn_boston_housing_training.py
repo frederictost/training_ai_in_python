@@ -13,7 +13,7 @@ from matplotlib import colors
 import tensorflow as tf
 # Sklearn
 from sklearn import preprocessing
-import ega_mlp_neural_network as ega_nn
+import tc_mlp_neural_network as ega_nn
 from sklearn.metrics import mean_squared_error
 
 epsilon = 1e-3
