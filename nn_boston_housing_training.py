@@ -1,5 +1,6 @@
 # OS functions
 import os
+import time
 # NumPy
 import numpy as np
 # Pandas
@@ -25,9 +26,10 @@ tf.set_random_seed(1234)
 # ---------------------
 
 # Load data
+start_time = time.time()
 print ("Reading data...")
 df = pd.read_table("./data/boston_housing.csv", sep =";", skiprows = [1])
-print ("Data was loaded.")
+print ("Data was loaded in %f s"%(time.time()-start_time))
 
 # ---------------------
 # 2. Shape dataset
